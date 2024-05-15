@@ -51,7 +51,7 @@
         </a>
       </div>
 
-      <!--sidebar-->
+      <!--sidebar heeellor-->
 
       <div class="bg-white rounded-xl shadow-lg mb-6 px-6 py-4">
         <a href="" class="inline-block text-gray-600 hover:text-black my-4 w-full">
