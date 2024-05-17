@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admission Dashboard</title>
+    <title>Cashier Dashboard</title>
    
     @vite('resources/css/app.css')
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -46,12 +46,12 @@
                 <div id="sidebarGradient" class="bg-gradient-to-b from-blue-500 via-blue-400 to-sky-300 rounded-xl shadow-lg mb-6 ml-5 mr-5 px- py-4">
                 <a href="#" class=" text-white hover:text-blue-900 my-4 w-full flex flex-col items-center justify-center">
                 <button class="material-icons-outlined focus:outline-none" style="font-size: 3rem;">account_circle</button>
-                <span class="mt-5 font-bold">Admin</span>
+                <span class="mt-5 font-bold">Cashier</span>
                 </a>
 
                 <!--Sidebar Navigation-->
                 <div class="mt-10 text-white text-sm font-semibold">
-                <a href="#" class="flex items-center space-x-1 rounded-md mx-4 px-2 py-2 hover:bg-blue-600 hover:text-blue-50">
+                <a href="#" class="flex items-center space-x-1 rounded-md mx-4 px-2 py-2 hover:bg-blue-600 hover:text-blue-50 active:bg-blue-600">
                 <span class="bg-trasnparent p-0.5 transition-all duration-300 inline-flex items-center">
                 <span class="material-icons-outlined">home</span>
                 <span class="ml-2">Home</span>
@@ -84,59 +84,46 @@
     <div class="flex flex-row">
         <div class="bg-gradient-to-b from-blue-500 via-blue-400 to-sky-300 rounded-xl shadow-lg px-6 py-4 mt-6 mr-5 flex-grow">
             <p class="text-3xl mt-3 font-bold text-white">Dashboard / Home </p>
-            <p class="mt-3 mb-3 text-base font-semibold text-indigo-900">Welcome, admin!</p>
+            <p class="mt-3 mb-3 text-base font-semibold text-indigo-900">Welcome to the cashier dashboard!</p>
         </div>
     </div>
 
     <div class="grid grid-cols-3 mb-3">
     <!--Admission-->
     <div class="mt-10">
-    <p class="text-base font-bold text-blue-800">Admission</p>
-    </div>
-
-    <!--Student Status-->
-    <div class="mt-10 ml-2">
-    <p class="text-base font-bold text-blue-800">Student Status</p>
+    <p class="text-base font-bold text-blue-800">Cashier Admin</p>
     </div>
     </div>
 
     <!--Dashboard Components-->
-    <div class="grid grid-cols-3 gap-6">
-        <div class="h-24 col-span-1 bg-gradient-to-r from-blue-500 via-blue-400 to-sky-300 rounded-xl shadow-lg flex items-center justify-center">
+    <div class="grid grid-cols-3 grid-rows-4 gap-6">
+        <div class="h-24 col-span-2 row-span-1 bg-gradient-to-r from-blue-500 via-blue-400 to-sky-300 rounded-xl shadow-lg flex items-center justify-center">
         <a href="" class="ml-5 text-white hover:text-blue-900 w-full flex items-center">
-                <span class="material-icons-outlined focus:outline-none" style="font-size: 2rem;">local_library</span>
-                <span class="ml-2 text-lg font-semibold">Enrollment Status</span>
+                <span class="material-icons-outlined focus:outline-none" style="font-size: 2rem;">payments</span>
+                <span class="ml-2 text-lg font-semibold">Payment Processesing</span>
             </a>
         </div>
 
-        <div class="h-24 mr-5 col-span-2 bg-gradient-to-r from-blue-500 via-blue-400 to-sky-300 rounded-xl shadow-lg flex items-center justify-start">
-        <a href="" class="ml-5 text-white hover:text-blue-900 w-full flex items-center">
-                <span class="material-icons-outlined focus:outline-none" style="font-size: 2rem;">how_to_reg</span>
-                <span class="ml-2 text-lg font-semibold">Accepted Applicants</span>
+        <div class="mr-5 col-span-1 row-span-3 bg-gradient-to-r from-blue-500 via-blue-400 to-sky-300 rounded-xl shadow-lg flex flex-col items-center justify-center">
+        <a href="" class="text-white hover:text-blue-900 w-full flex flex-col items-center justify-center">
+            <span class="material-icons-outlined focus:outline-none mb-2" style="font-size: 2rem;">analytics</span>
+            <span class="mt-3 text-lg font-semibold text-center">Student <br>Payment Status</span>
             </a>
         </div>
 
-        <div class="h-24 col-span-1 bg-gradient-to-r from-blue-500 via-blue-400 to-sky-300 rounded-xl shadow-lg flex items-center justify-center">
+        <div class="h-24 col-span-2 row-span-1 bg-gradient-to-r from-blue-500 via-blue-400 to-sky-300 rounded-xl shadow-lg flex items-center justify-center">
         <a href="" class="ml-5 text-white hover:text-blue-900 w-full flex items-center">
-                <span class="material-icons-outlined focus:outline-none" style="font-size: 2rem;">find_in_page</span>
-                <span class="ml-2 text-lg font-semibold">Student Evaluation</span>
+                <span class="material-icons-outlined focus:outline-none" style="font-size: 2rem;">credit_score</span>
+                <span class="ml-2 text-lg font-semibold">Payment Confirmation</span>
             </a>
         </div>
 
-        <div class="h-24 col-span-1 bg-gradient-to-r from-blue-500 via-blue-400 to-sky-300 rounded-xl shadow-lg flex items-center justify-center">
+        <div class="h-24 col-span-2 row-span-1 bg-gradient-to-r from-blue-500 via-blue-400 to-sky-300 rounded-xl shadow-lg flex items-center justify-center">
         <a href="" class="ml-5 text-white hover:text-blue-900 w-full flex items-center">
-                <span class="material-icons-outlined focus:outline-none" style="font-size: 2rem;">pending_actions</span>
-                <span class="ml-2 text-lg font-semibold">Student Application Processing</span>
+                <span class="material-icons-outlined focus:outline-none" style="font-size: 2rem;">history</span>
+                <span class="ml-2 text-lg font-semibold">Payment History</span>
             </a>
         </div>
-
-        <div class="h-24 mr-5 col-span-1 bg-gradient-to-r from-blue-500 via-blue-400 to-sky-300 rounded-xl shadow-lg flex items-center justify-start">
-        <a href="" class="ml-5 text-white hover:text-blue-900 w-full flex items-center">
-                <span class="material-icons-outlined focus:outline-none" style="font-size: 2rem;">assignment_late</span>
-                <span class="ml-2 text-lg font-semibold">Rejected Applicants</span>
-            </a>
-        </div>
-                        
         </div>
         </div>
         </div>
@@ -146,5 +133,6 @@
 </div>
 </div>
 </body>
+
 
 </html>
